@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://akash8356.github.io/akash-portfolio/sitemap.xml
