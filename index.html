@@ -1,649 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akash Prajapati | AI Backend Engineer</title>
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- AOS (Animate On Scroll) -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-    <!-- Typed.js -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #050810; /* Very dark blue/black */
-            color: #e2e8f0;
-            overflow-x: hidden;
-        }
-
-        .font-mono {
-            font-family: 'Fira Code', monospace;
-        }
-
-        /* Particle Canvas Background */
-        #particle-canvas {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            z-index: -1;
-            pointer-events: none; /* Let clicks pass through to buttons */
-        }
-
-        /* Glassmorphism */
-        .glass-card {
-            background: rgba(15, 23, 42, 0.4);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-            transition: all 0.3s ease;
-        }
-        .glass-card:hover {
-            border-color: rgba(59, 130, 246, 0.3);
-            box-shadow: 0 0 20px rgba(59, 130, 246, 0.15);
-            transform: translateY(-5px);
-        }
-
-        /* Text Gradients */
-        .text-gradient {
-            background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 50%, #22d3ee 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-size: 200% auto;
-            animation: gradientShift 5s linear infinite;
-        }
-
-        @keyframes gradientShift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
-        /* Glowing Button */
-        .btn-glow {
-            position: relative;
-            transition: all 0.3s ease;
-        }
-        .btn-glow::before {
-            content: '';
-            position: absolute;
-            top: -2px; left: -2px; right: -2px; bottom: -2px;
-            background: linear-gradient(45deg, #3b82f6, #8b5cf6, #06b6d4, #3b82f6);
-            background-size: 400%;
-            z-index: -1;
-            filter: blur(10px);
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
-            border-radius: inherit;
-            animation: glow-anim 3s linear infinite;
-        }
-        .btn-glow:hover::before {
-            opacity: 1;
-        }
-
-        @keyframes glow-anim {
-            0% { background-position: 0 0; }
-            50% { background-position: 400% 0; }
-            100% { background-position: 0 0; }
-        }
-
-        /* Timeline Glow */
-        .timeline-dot {
-            box-shadow: 0 0 10px #3b82f6, 0 0 20px #3b82f6;
-            animation: pulse-glow 2s infinite;
-        }
-        @keyframes pulse-glow {
-            0% { box-shadow: 0 0 5px #3b82f6, 0 0 10px #3b82f6; }
-            50% { box-shadow: 0 0 15px #3b82f6, 0 0 25px #3b82f6; }
-            100% { box-shadow: 0 0 5px #3b82f6, 0 0 10px #3b82f6; }
-        }
-
-        /* Architecture Diagram Node */
-        .arch-node {
-            background: rgba(30, 41, 59, 0.8);
-            border: 1px solid #3b82f6;
-            box-shadow: inset 0 0 10px rgba(59, 130, 246, 0.2);
-            transition: all 0.3s ease;
-        }
-        .arch-node:hover {
-            background: rgba(59, 130, 246, 0.2);
-            box-shadow: 0 0 15px rgba(59, 130, 246, 0.6);
-            transform: scale(1.05);
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Akash Prajapati | Python Backend Engineer &amp; Applied AI Developer</title>
+<meta name="description" content="Python backend engineer with 3.4+ years of experience in Django, FastAPI, microservices and enterprise integrations, building RAG and LLM-powered applications. Based in Mumbai, India.">
+<link rel="canonical" href="https://akash8356.github.io/akash-portfolio/">
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0b1020">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Akash Prajapati | Python Backend Engineer &amp; Applied AI Developer">
+<meta property="og:description" content="Scalable backend systems and AI-powered applications: Django, FastAPI, Kafka, RAG and LLM workflows.">
+<meta property="og:url" content="https://akash8356.github.io/akash-portfolio/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Akash Prajapati | Python Backend Engineer &amp; Applied AI Developer">
+<meta name="twitter:description" content="Scalable backend systems and AI-powered applications.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@600&display=swap">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Akash Prajapati","jobTitle":"Python Backend Engineer","url":"https://akash8356.github.io/akash-portfolio/","email":"mailto:akash.p8869@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Mumbai","addressRegion":"Maharashtra","addressCountry":"IN"},"sameAs":["https://github.com/Akash8356","https://www.linkedin.com/in/akash-prajapati-backend-ai/"],"alumniOf":"Smt. Indira Gandhi Engineering College, University of Mumbai","knowsAbout":["Python","Django","FastAPI","REST APIs","Microservices","RAG","LLM applications"]}</script>
 </head>
-<body class="antialiased relative">
+<body>
+<a class="skip" href="#main">Skip to content</a><div id="progress" aria-hidden="true"></div>
+<header class="nav"><div class="wrap"><a class="logo" href="#top-of-page">Akash Prajapati</a>
+<nav aria-label="Main"><ul id="nav-list"><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#experience">Experience</a></li><li><a href="#projects">Projects</a></li><li><a href="#resume">Resume</a></li><li><a href="#more">Education</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+<div><button class="icon-btn" id="theme" aria-label="Toggle light or dark theme" aria-pressed="false">◐</button> <button class="icon-btn" id="menu" aria-label="Menu" aria-expanded="false" aria-controls="nav-list">☰</button></div></div></header>
+<main id="main"><span id="top-of-page"></span>
+<section class="hero"><div class="wrap">
+<div class="eyebrow">Mumbai, India</div><h1><span class="grad">Akash Prajapati</span></h1>
+<div class="role"><b>Python Backend Engineer</b> | Applied AI &amp; LLM Systems</div>
+<div class="role" aria-hidden="true">&gt; <span id="rotator"></span></div>
+<p class="lead">Building scalable backend systems and intelligent AI-powered applications. Python backend engineer with 3.4+ years of experience developing enterprise backend systems, production REST APIs and microservices, with hands-on work on RAG pipelines, LLM-powered voice applications, semantic retrieval and AI-assisted code analysis.</p>
+<div class="btns"><a class="btn primary" id="hero-resume" href="assets/documents/Akash_Prajapati_Master_Resume.pdf" target="_blank" rel="noopener">Download Resume</a><a class="btn" href="#projects">Explore Projects</a><a class="btn" href="#contact">Contact Me</a></div>
+<div class="btns"><a class="btn" href="https://github.com/Akash8356" rel="noopener">GitHub</a><a class="btn" href="https://www.linkedin.com/in/akash-prajapati-backend-ai/" rel="noopener">LinkedIn</a></div>
+<div class="stats"><div class="stat"><strong>3.4+</strong><span>Years of experience</span></div><div class="stat"><strong>40+ / 50+</strong><span>REST APIs (e-commerce / IQMS, counted separately)</span></div><div class="stat"><strong>~5,000</strong><span>Test cases in RAG assistant evaluation</span></div><div class="stat"><strong>~87%</strong><span>Average evaluation score (LLM-based)</span></div></div>
+</div></section>
 
-    <!-- Interactive Particle Background -->
-    <canvas id="particle-canvas"></canvas>
+<section id="about"><div class="wrap"><div class="eyebrow">About</div><h2>Backend foundation, applied AI on top</h2>
+<p class="lead">I'm a Python backend engineer with 3.4+ years of experience building scalable backend systems, enterprise APIs, microservices and integrations with Python, Django, Django REST Framework, FastAPI, PostgreSQL, Redis, Celery and Kafka.</p>
+<p class="lead">My applied AI work includes retrieval-augmented generation, LLM integration, a Hindi voice-enabled assistant, semantic and image-embedding product search, AI-assisted Git repository analysis, and LLM evaluation with response validation. I work with clients to gather requirements, build the solution, deploy to production and monitor it afterwards.</p></div></section>
 
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 top-0 bg-[#050810]/80 backdrop-blur-md border-b border-white/5">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16 items-center">
-                <a href="#" class="text-xl font-bold tracking-tighter text-white font-mono">
-                    <span class="text-blue-500">&lt;</span>Akash<span class="text-blue-500">/&gt;</span>
-                </a>
-                <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
-                    <a href="#about" class="text-gray-400 hover:text-blue-400 transition">About</a>
-                    <a href="#skills" class="text-gray-400 hover:text-blue-400 transition">Skills</a>
-                    <a href="#experience" class="text-gray-400 hover:text-blue-400 transition">Experience</a>
-                    <a href="#achievements" class="text-gray-400 hover:text-blue-400 transition">Achievements</a>
-                    <a href="#contact" class="px-5 py-2 rounded-full bg-blue-600/20 border border-blue-500/50 hover:bg-blue-600/40 text-blue-300 transition btn-glow">Contact Me</a>
-                </div>
-                <!-- Mobile menu button -->
-                <div class="md:hidden flex items-center">
-                    <button class="text-gray-400 hover:text-white focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
-                        <i class="fas fa-bars text-2xl"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-[#050810] border-b border-white/5">
-            <div class="px-4 pt-2 pb-4 space-y-2">
-                <a href="#about" class="block px-3 py-2 text-gray-300 hover:text-blue-400">About</a>
-                <a href="#skills" class="block px-3 py-2 text-gray-300 hover:text-blue-400">Skills</a>
-                <a href="#experience" class="block px-3 py-2 text-gray-300 hover:text-blue-400">Experience</a>
-                <a href="#achievements" class="block px-3 py-2 text-gray-300 hover:text-blue-400">Achievements</a>
-                <a href="#contact" class="block px-3 py-2 text-blue-400 font-bold">Contact</a>
-            </div>
-        </div>
-    </nav>
+<section id="skills"><div class="wrap"><div class="eyebrow">Skills</div><h2>Technical skills</h2><div class="grid" id="skills-grid"></div></div></section>
 
-    <!-- Hero Section -->
-    <section class="min-h-screen flex items-center justify-center pt-20 px-4 relative">
-        <div class="max-w-5xl mx-auto text-center z-10" data-aos="fade-up" data-aos-duration="1000">
-            <div class="mb-6 inline-block px-4 py-1.5 rounded-full border border-blue-500/30 bg-blue-900/20 text-sm font-mono text-blue-400">
-                <span class="w-2 h-2 inline-block bg-green-500 rounded-full mr-2 animate-pulse"></span>Available for Work
-            </div>
-            
-            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-4 tracking-tight">
-                Akash Prajapati
-            </h1>
-            
-            <h2 class="text-2xl md:text-4xl font-bold mb-6 h-12">
-                <span class="text-gradient" id="typed-text"></span>
-            </h2>
-            
-            <p class="mt-4 max-w-2xl text-lg text-gray-400 mx-auto mb-10 font-light">
-                Python Backend Engineer with 3.4+ years of experience building scalable systems, production REST APIs, and LLM-powered voice assistants. Hands-on with semantic retrieval, image embeddings, and AI agent design.
-            </p>
-            
-            <div class="flex flex-wrap justify-center gap-4 mb-16">
-                <!-- UPDATED RESUME LINK HERE -->
-                <a href="https://docs.google.com/document/d/1TGYbYLCieU42-mldJk0_ROr0ZZ-8T44A/export?format=pdf" target="_blank" class="px-8 py-3 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-medium transition btn-glow shadow-[0_0_20px_rgba(37,99,235,0.4)]">
-                    <i class="fas fa-file-pdf mr-2"></i> Download Resume
-                </a>
-                <a href="https://github.com/Akash8356" target="_blank" class="px-8 py-3 rounded-lg bg-gray-800/80 hover:bg-gray-700 text-white font-medium transition border border-gray-600 backdrop-blur-sm">
-                    <i class="fab fa-github mr-2"></i> GitHub
-                </a>
-                <a href="https://www.linkedin.com/in/akash-prajapati-backend-ai/" target="_blank" class="px-8 py-3 rounded-lg bg-[#0a66c2]/80 hover:bg-[#0a66c2] text-white font-medium transition border border-[#0a66c2] backdrop-blur-sm">
-                    <i class="fab fa-linkedin mr-2"></i> LinkedIn
-                </a>
-            </div>
+<section id="experience"><div class="wrap"><div class="eyebrow">Experience</div><h2>Professional experience</h2>
+<div class="timeline">
+<div class="job reveal"><h3>Software Developer · <a href="https://vishleshan.ai/" rel="noopener">Vishleshan Software Solutions Pvt. Ltd.</a></h3><div class="meta">25 Nov 2025 – 24 Sep 2026 · Mumbai</div>
+<div class="sub">
+<div class="card"><h4>Edukaan: commercial vehicle spare-parts e-commerce (Tata Motors)</h4><ul><li>Developed 40+ REST APIs with Django and DRF on a platform handling 1,000+ daily orders.</li><li>Implemented Smart Search with separate image and text embedding pipelines (top-5 results).</li><li>Built FastAPI + Kafka notification services (~1,000–10,000 per day).</li><li>Redis caching for Order History, Django ORM optimisation, Celery/Redis exports with S3 presigned downloads.</li><li>Built DSR/MSR workflows; integrated Shiprocket and SAP Grow.</li></ul></div>
+<div class="card feature"><h4>Bhasasetu: Hindi voice-enabled AI assistant (Whirlpool)</h4><ul><li>Built backend APIs and an end-to-end RAG pipeline: recursive chunking, Sentence Transformers, ChromaDB, cosine-similarity retrieval with dynamic thresholding.</li><li>LangGraph workflows with conditional routing, query rephrasing and fallback; Whisper, GPT-4 and ElevenLabs for the voice loop.</li><li>PII redaction, structured output validation, prompt-injection detection; LangSmith tracing.</li><li>Evaluated ~5,000 test cases (expected answers + LLM-based evaluation), ~87% average score.</li></ul></div>
+<div class="card"><h4>PV Shopee: passenger vehicle spare-parts e-commerce (Tata Motors)</h4><ul><li>Integrated Keycloak authentication (JWT, OAuth 2.0), added CAPTCHA validation, supported production issues.</li></ul></div></div></div>
+<div class="job reveal"><h3>Solution Analyst · <a href="https://sankeysolutions.com/" rel="noopener">Sankey Solutions</a></h3><div class="meta">1 Jun 2023 – 14 Nov 2025 · Thane, Maharashtra</div>
+<div class="sub">
+<div class="card"><h4>FleetEdge: IoT fleet management platform (Tata Motors)</h4><ul><li>Backend features across vehicle, wrapper, subscription and payment services in an ~18-microservice platform.</li><li>Built the Vehicle Day-wise Tracker end to end (GPS processing, Haversine, trips and stops, map route data).</li><li>20–30% API performance gain from N+1 fixes and ORM optimisation.</li><li>Role- and subscription-based access control; Mileage Saarathi logic; Sahaj telemetry sync (30-minute cron, checkpoints, upserts); CCAvenue integration.</li></ul></div>
+<div class="card"><h4>IQMS: Intelligent Quality Management System (Tata Motors)</h4><ul><li>User Portal backend with 50+ REST APIs digitising paper-based assembly-line inspections.</li><li>Quality Maker/Checker workflows, Kafka consumer for VIN data, Swagger/OpenAPI docs.</li></ul></div>
+<div class="card"><h4>Vidura: AI-assisted Git change &amp; security analysis</h4><ul><li>Independently developed it: GitHub API diffs, separate OpenAI workflows for summaries and security detection, secret checks, structured severity reports.</li></ul></div></div></div>
+</div></div></section>
 
-            <!-- Interactive Architecture Diagram -->
-            <div class="mt-8 glass-card rounded-2xl p-6 hidden md:block max-w-4xl mx-auto overflow-hidden relative" data-aos="fade-up" data-aos-delay="200">
-                <!-- Decorative gradient blob -->
-                <div class="absolute -top-10 -right-10 w-32 h-32 bg-blue-500 rounded-full mix-blend-multiply filter blur-2xl opacity-20 animate-blob"></div>
-                
-                <div class="flex items-center space-x-2 mb-6 border-b border-gray-700/50 pb-3">
-                    <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
-                    <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
-                    <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
-                    <span class="text-xs text-gray-500 ml-4 font-mono">system-architecture.json</span>
-                </div>
-                
-                <div class="font-mono text-sm flex flex-row justify-center items-center gap-2 md:gap-4 text-gray-400 flex-wrap">
-                    <div class="arch-node p-2 rounded text-gray-300">Client</div>
-                    <i class="fas fa-arrow-right text-blue-500/50"></i>
-                    <div class="arch-node p-2 rounded text-blue-300">API</div>
-                    <i class="fas fa-arrow-right text-blue-500/50"></i>
-                    <div class="arch-node p-2 rounded text-blue-300">Services</div>
-                    <i class="fas fa-arrow-right text-blue-500/50"></i>
-                    <div class="arch-node p-2 rounded text-yellow-300">Kafka</div>
-                    <i class="fas fa-arrow-right text-blue-500/50"></i>
-                    <div class="arch-node p-2 rounded text-cyan-300 bg-blue-900/40 arch-node-glow">AI Agent</div>
-                    <i class="fas fa-arrow-right text-blue-500/50"></i>
-                    <div class="arch-node p-2 rounded text-purple-300">LLM</div>
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="projects"><div class="wrap"><div class="eyebrow">Projects</div><h2>Featured projects</h2><p class="lead">Built for clients under employment, so there are no public repositories or demos. Details are described at a high level.</p><div class="grid" id="projects-grid"></div></div></section>
 
-    <!-- About Section -->
-    <section id="about" class="py-20 relative">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-white mb-10 flex items-center" data-aos="fade-right">
-                <span class="text-blue-500 font-mono mr-2">01.</span> Professional Summary
-                <div class="h-px bg-gray-700 flex-grow ml-4"></div>
-            </h2>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="md:col-span-2 glass-card p-8 rounded-2xl" data-aos="fade-up">
-                    <p class="text-gray-300 leading-relaxed text-lg mb-4">
-                        Python Backend Engineer with <strong class="text-white">3.4+ years</strong> of experience building scalable Python/Django systems, production REST APIs, and integrations for enterprise automotive and e-commerce platforms. 
-                    </p>
-                    <p class="text-gray-300 leading-relaxed text-lg mb-4">
-                        Hands-on experience developing <strong class="text-blue-400">LLM-powered voice assistants, semantic retrieval pipelines, image-based product search, and AI-assisted code analysis</strong>. 
-                    </p>
-                    <p class="text-gray-300 leading-relaxed text-lg">
-                        Strong foundation in backend architecture, asynchronous processing, authentication, database optimization, and production systems.
-                    </p>
-                </div>
-                
-                <div class="glass-card p-8 rounded-2xl flex flex-col justify-center" data-aos="fade-left">
-                    <h3 class="text-xl font-semibold text-white mb-6">Quick Info</h3>
-                    <ul class="space-y-4 text-gray-400 text-sm">
-                        <li class="flex items-start"><i class="fas fa-map-marker-alt text-blue-500 w-6 mt-1"></i> Mumbai, Maharashtra, India</li>
-                        <li class="flex items-start"><i class="fas fa-envelope text-blue-500 w-6 mt-1"></i> <a href="mailto:akash.p8869@gmail.com" class="hover:text-white transition break-all">akash.p8869@gmail.com</a></li>
-                        <li class="flex items-start"><i class="fas fa-phone text-blue-500 w-6 mt-1"></i> <a href="tel:+918356886969" class="hover:text-white transition">+91 83568 86969</a></li>
-                        <li class="flex items-start"><i class="fas fa-graduation-cap text-blue-500 w-6 mt-1"></i> B.E. Computer Engineering (8.88 CGPA)</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="resume"><div class="wrap"><div class="eyebrow">Resume</div><h2>Resumes</h2><div class="grid" id="resume-grid"></div></div></section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-20 relative">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-white mb-10 flex items-center" data-aos="fade-right">
-                <span class="text-blue-500 font-mono mr-2">02.</span> Technical Skills
-                <div class="h-px bg-gray-700 flex-grow ml-4"></div>
-            </h2>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Applied AI & LLMs -->
-                <div class="glass-card p-6 rounded-xl md:col-span-2 lg:col-span-2 border-t-2 border-t-purple-500" data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="text-lg font-semibold text-purple-400 mb-4 flex items-center font-mono">
-                        <i class="fas fa-brain mr-3"></i> Applied AI & LLMs
-                    </h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-purple-900/30 border border-purple-500/30 rounded-md text-sm text-purple-200">OpenAI GPT-4</span>
-                        <span class="px-3 py-1 bg-purple-900/30 border border-purple-500/30 rounded-md text-sm text-purple-200">Whisper</span>
-                        <span class="px-3 py-1 bg-purple-900/30 border border-purple-500/30 rounded-md text-sm text-purple-200">RAG</span>
-                        <span class="px-3 py-1 bg-purple-900/30 border border-purple-500/30 rounded-md text-sm text-purple-200">Prompt Engineering</span>
-                        <span class="px-3 py-1 bg-purple-900/30 border border-purple-500/30 rounded-md text-sm text-purple-200">Semantic Retrieval</span>
-                        <span class="px-3 py-1 bg-purple-900/30 border border-purple-500/30 rounded-md text-sm text-purple-200">Image Embeddings</span>
-                        <span class="px-3 py-1 bg-purple-900/30 border border-purple-500/30 rounded-md text-sm text-purple-200">LangChain</span>
-                        <span class="px-3 py-1 bg-purple-900/30 border border-purple-500/30 rounded-md text-sm text-purple-200">LangGraph</span>
-                    </div>
-                </div>
+<section id="more"><div class="wrap"><div class="grid">
+<div class="card reveal"><h3>Education</h3><p><strong>B.E. Computer Engineering</strong><br>Smt. Indira Gandhi Engineering College, University of Mumbai<br><span class="meta">Aug 2019 – Jun 2023 · CGPA 8.88/10</span></p></div>
+<div class="card reveal"><h3>Achievements</h3><ul><li><a href="https://lnkd.in/p/dYPYi_Pu" rel="noopener"><strong>Shining Star</strong></a>: outstanding technical contributions.</li><li><strong>Bar Raiser</strong>: problem-solving, technical guidance and supporting team members.</li></ul></div>
+<div class="card reveal"><h3>Certifications</h3><ul><li><a href="https://www.coursera.org/account/accomplishments/verify/B2RUTWSD4VNE" rel="noopener">Machine Learning with Google Cloud</a></li><li><a href="https://www.coursera.org/account/accomplishments/verify/FA3MXA6RJEAN" rel="noopener">Android Development</a></li></ul></div>
+<div class="card reveal"><h3>Publication</h3><p><a href="https://www.irjet.net/archives/V10/i4/IRJET-V10I4176.pdf" rel="noopener">Crop Protection Against Birds Using Deep Learning and IoT</a><br><span class="meta">IRJET, Vol. 10, Issue 4, April 2023</span></p></div>
+</div></div></section>
 
-                <!-- Backend & APIs -->
-                <div class="glass-card p-6 rounded-xl border-t-2 border-t-blue-500" data-aos="fade-up" data-aos-delay="200">
-                    <h3 class="text-lg font-semibold text-blue-400 mb-4 flex items-center font-mono">
-                        <i class="fas fa-server mr-3"></i> Backend & APIs
-                    </h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-gray-800/50 border border-gray-600/50 rounded-md text-sm text-gray-300 hover:border-blue-400 transition">Python</span>
-                        <span class="px-3 py-1 bg-gray-800/50 border border-gray-600/50 rounded-md text-sm text-gray-300 hover:border-blue-400 transition">Django</span>
-                        <span class="px-3 py-1 bg-gray-800/50 border border-gray-600/50 rounded-md text-sm text-gray-300 hover:border-blue-400 transition">DRF</span>
-                        <span class="px-3 py-1 bg-gray-800/50 border border-gray-600/50 rounded-md text-sm text-gray-300 hover:border-blue-400 transition">FastAPI</span>
-                        <span class="px-3 py-1 bg-gray-800/50 border border-gray-600/50 rounded-md text-sm text-gray-300 hover:border-blue-400 transition">REST APIs</span>
-                        <span class="px-3 py-1 bg-gray-800/50 border border-gray-600/50 rounded-md text-sm text-gray-300 hover:border-blue-400 transition">Microservices</span>
-                    </div>
-                </div>
-
-                <!-- Databases & Messaging -->
-                <div class="glass-card p-6 rounded-xl border-t-2 border-t-green-500" data-aos="fade-up" data-aos-delay="300">
-                    <h3 class="text-lg font-semibold text-green-400 mb-4 flex items-center font-mono">
-                        <i class="fas fa-database mr-3"></i> Databases & Messaging
-                    </h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-gray-800/50 border border-gray-600/50 rounded-md text-sm text-gray-300 hover:border-green-400 transition">PostgreSQL</span>
-                        <span class="px-3 py-1 bg-gray-800/50 border border-gray-600/50 rounded-md text-sm text-gray-300 hover:border-green-400 transition">Redis</span>
-                        <span class="px-3 py-1 bg-gray-800/50 border border-gray-600/50 rounded-md text-sm text-gray-300 hover:border-green-400 transition">Kafka</span>
-                        <span class="px-3 py-1 bg-gray-800/50 border border-gray-600/50 rounded-md text-sm text-gray-300 hover:border-green-400 transition">Celery</span>
-                        <span class="px-3 py-1 bg-gray-800/50 border border-gray-600/50 rounded-md text-sm text-gray-300 hover:border-green-400 transition">Django ORM</span>
-                    </div>
-                </div>
-
-                <!-- Security & Cloud -->
-                <div class="glass-card p-6 rounded-xl border-t-2 border-t-yellow-500" data-aos="fade-up" data-aos-delay="400">
-                    <h3 class="text-lg font-semibold text-yellow-400 mb-4 flex items-center font-mono">
-                        <i class="fas fa-cloud mr-3"></i> Security & Cloud
-                    </h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-gray-800/50 border border-gray-600/50 rounded-md text-sm text-gray-300 hover:border-yellow-400 transition">Keycloak</span>
-                        <span class="px-3 py-1 bg-gray-800/50 border border-gray-600/50 rounded-md text-sm text-gray-300 hover:border-yellow-400 transition">JWT</span>
-                        <span class="px-3 py-1 bg-gray-800/50 border border-gray-600/50 rounded-md text-sm text-gray-300 hover:border-yellow-400 transition">OAuth 2.0</span>
-                        <span class="px-3 py-1 bg-gray-800/50 border border-gray-600/50 rounded-md text-sm text-gray-300 hover:border-yellow-400 transition">AWS S3</span>
-                        <span class="px-3 py-1 bg-gray-800/50 border border-gray-600/50 rounded-md text-sm text-gray-300 hover:border-yellow-400 transition">Docker</span>
-                        <span class="px-3 py-1 bg-gray-800/50 border border-gray-600/50 rounded-md text-sm text-gray-300 hover:border-yellow-400 transition">Kubernetes (Fund.)</span>
-                    </div>
-                </div>
-                 
-                 <!-- Tools & Engineering -->
-                 <div class="glass-card p-6 rounded-xl border-t-2 border-t-gray-500" data-aos="fade-up" data-aos-delay="500">
-                    <h3 class="text-lg font-semibold text-gray-300 mb-4 flex items-center font-mono">
-                        <i class="fas fa-tools mr-3"></i> Tools & Engineering
-                    </h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-gray-800/50 border border-gray-600/50 rounded-md text-sm text-gray-300 hover:border-gray-400 transition">Git / GitHub</span>
-                        <span class="px-3 py-1 bg-gray-800/50 border border-gray-600/50 rounded-md text-sm text-gray-300 hover:border-gray-400 transition">Grafana</span>
-                        <span class="px-3 py-1 bg-gray-800/50 border border-gray-600/50 rounded-md text-sm text-gray-300 hover:border-gray-400 transition">System Design</span>
-                        <span class="px-3 py-1 bg-gray-800/50 border border-gray-600/50 rounded-md text-sm text-gray-300 hover:border-gray-400 transition">React Native</span>
-                        <span class="px-3 py-1 bg-gray-800/50 border border-gray-600/50 rounded-md text-sm text-gray-300 hover:border-gray-400 transition">JavaScript</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="py-20 relative">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-white mb-10 flex items-center" data-aos="fade-right">
-                <span class="text-blue-500 font-mono mr-2">03.</span> Experience
-                <div class="h-px bg-gray-700 flex-grow ml-4"></div>
-            </h2>
-            
-            <div class="space-y-12 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-blue-500 before:via-blue-900 before:to-transparent">
-                
-                <!-- Job 1 -->
-                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active" data-aos="fade-up">
-                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-blue-500 bg-[#050810] text-blue-500 shadow timeline-dot shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
-                        <i class="fas fa-briefcase text-sm"></i>
-                    </div>
-                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-card p-6 rounded-xl">
-                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-                            <h3 class="text-xl font-bold text-white">Software Engineer</h3>
-                            <span class="text-xs font-mono bg-blue-900/40 text-blue-300 px-2 py-1 rounded border border-blue-500/30 mt-2 md:mt-0">Nov 2025 - Sep 2026</span>
-                        </div>
-                        <p class="text-blue-400 font-medium text-sm mb-1">Vishleshan AI Solutions</p>
-                        <p class="text-xs text-gray-500 mb-4 italic">Whirlpool Client — Bhasasetu | Multilingual Voice Assistant</p>
-                        <ul class="list-none text-sm text-gray-300 space-y-2 mb-4">
-                            <li class="relative pl-4 before:content-['▹'] before:absolute before:left-0 before:text-blue-500">Contributed to a multilingual, voice-enabled AI assistant designed to support natural interactions across languages.</li>
-                            <li class="relative pl-4 before:content-['▹'] before:absolute before:left-0 before:text-blue-500">Integrated <strong class="text-white">Whisper</strong> (STT), <strong class="text-white">Sentence Transformers & ChromaDB</strong> (Semantic Retrieval), <strong class="text-white">OpenAI GPT-4</strong> (Generation), and <strong class="text-white">ElevenLabs</strong> (TTS).</li>
-                            <li class="relative pl-4 before:content-['▹'] before:absolute before:left-0 before:text-blue-500">Evaluated agent performance across ~5,000 test cases, achieving an evaluation score of ~87%.</li>
-                        </ul>
-                        
-                        <p class="text-xs text-gray-500 mb-4 italic">Tata Motors Client — Edukaan & PV Shopee | Enterprise E-Commerce</p>
-                        <ul class="list-none text-sm text-gray-300 space-y-2">
-                            <li class="relative pl-4 before:content-['▹'] before:absolute before:left-0 before:text-blue-500">Developed <strong class="text-white">Smart Search</strong> using image embeddings and vector similarity search to retrieve top matching products.</li>
-                            <li class="relative pl-4 before:content-['▹'] before:absolute before:left-0 before:text-blue-500">Supported product discovery through image, part-number, part-name, category, and voice-based search.</li>
-                            <li class="relative pl-4 before:content-['▹'] before:absolute before:left-0 before:text-blue-500">Built FastAPI notification services integrated with Kafka. Implemented Auth & OTP via Keycloak/JWT/OAuth.</li>
-                            <li class="relative pl-4 before:content-['▹'] before:absolute before:left-0 before:text-blue-500">Developed Celery/Redis pipelines and improved Order History retrieval via caching. Integrated Shiprocket & SAP APIs.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Job 2 -->
-                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active" data-aos="fade-up" data-aos-delay="100">
-                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-blue-500 bg-[#050810] text-blue-500 shadow timeline-dot shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
-                        <i class="fas fa-code text-sm"></i>
-                    </div>
-                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-card p-6 rounded-xl">
-                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-                            <h3 class="text-xl font-bold text-white">Solution Analyst</h3>
-                            <span class="text-xs font-mono bg-blue-900/40 text-blue-300 px-2 py-1 rounded border border-blue-500/30 mt-2 md:mt-0">Jun 2023 - Nov 2025</span>
-                        </div>
-                        <p class="text-blue-400 font-medium text-sm mb-1">Sankey Solutions</p>
-                        <p class="text-xs text-gray-500 mb-4 italic">Vidura — Git Repository Change & Security Analysis</p>
-                        <ul class="list-none text-sm text-gray-300 space-y-2 mb-4">
-                            <li class="relative pl-4 before:content-['▹'] before:absolute before:left-0 before:text-blue-500">Contributed to an AI-assisted code analysis solution examining Git commit diffs and surrounding code context.</li>
-                            <li class="relative pl-4 before:content-['▹'] before:absolute before:left-0 before:text-blue-500">Integrated <strong class="text-white">LLM-based workflows</strong> for code-change summarization and potential security issue analysis.</li>
-                            <li class="relative pl-4 before:content-['▹'] before:absolute before:left-0 before:text-blue-500">Structured analysis findings to communicate issue descriptions and severity for developer review.</li>
-                        </ul>
-
-                        <p class="text-xs text-gray-500 mb-4 italic">Tata Motors Client — Fleet Management, IQMS, Audit & FleetEdge</p>
-                        <ul class="list-none text-sm text-gray-300 space-y-2">
-                            <li class="relative pl-4 before:content-['▹'] before:absolute before:left-0 before:text-blue-500">Contributed to <strong class="text-white">50+ REST APIs</strong> and third-party integrations across four enterprise automotive systems.</li>
-                            <li class="relative pl-4 before:content-['▹'] before:absolute before:left-0 before:text-blue-500">Developed backend services using Django and PostgreSQL within a microservices architecture (Mileage Saarathi, Driving Scorecard).</li>
-                            <li class="relative pl-4 before:content-['▹'] before:absolute before:left-0 before:text-blue-500">Implemented Kafka-based manufacturing inspection workflows and audit risk assessment engines.</li>
-                            <li class="relative pl-4 before:content-['▹'] before:absolute before:left-0 before:text-blue-500">Optimized DB access using ORM techniques (select_related, annotations). Built React Native features for FleetEdge.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Achievements & Publications Section -->
-    <section id="achievements" class="py-20 relative">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-white mb-10 flex items-center" data-aos="fade-right">
-                <span class="text-blue-500 font-mono mr-2">04.</span> Achievements & Publications
-                <div class="h-px bg-gray-700 flex-grow ml-4"></div>
-            </h2>
-            
-            <div class="grid md:grid-cols-2 gap-6">
-                <!-- Achievements -->
-                <div class="space-y-4">
-                    <div class="glass-card p-6 rounded-xl flex items-start gap-4" data-aos="fade-up">
-                        <div class="p-3 bg-yellow-500/10 rounded-lg text-yellow-400 border border-yellow-500/20">
-                            <i class="fas fa-star text-xl"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold text-white">"Shining Star" Award</h3>
-                            <p class="text-sm text-gray-400 mt-1">Recognized for outstanding technical contributions.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="glass-card p-6 rounded-xl flex items-start gap-4" data-aos="fade-up" data-aos-delay="100">
-                        <div class="p-3 bg-blue-500/10 rounded-lg text-blue-400 border border-blue-500/20">
-                            <i class="fas fa-award text-xl"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold text-white">"Bar Raiser" Recognition</h3>
-                            <p class="text-sm text-gray-400 mt-1">Recognized for problem-solving, technical guidance, and supporting team members.</p>
-                        </div>
-                    </div>
-
-                     <!-- Education -->
-                    <div class="glass-card p-6 rounded-xl flex items-start gap-4" data-aos="fade-up" data-aos-delay="200">
-                        <div class="p-3 bg-purple-500/10 rounded-lg text-purple-400 border border-purple-500/20">
-                            <i class="fas fa-graduation-cap text-xl"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold text-white">Bachelor of Computer Engineering</h3>
-                            <p class="text-sm text-gray-400 mt-1">Smt. Indira Gandhi Engineering College, University of Mumbai</p>
-                            <p class="text-xs text-blue-400 mt-1">CGPA: 8.88/10 (Aug 2019 - Jun 2023)</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Publications & Certs -->
-                <div class="space-y-4">
-                    <a href="https://www.irjet.net/archives/V10/i4/IRJET-V10I4176.pdf" target="_blank" class="block glass-card p-6 rounded-xl group" data-aos="fade-up" data-aos-delay="100">
-                        <div class="flex items-start gap-4">
-                            <div class="p-3 bg-green-500/10 rounded-lg text-green-400 border border-green-500/20 group-hover:scale-110 transition">
-                                <i class="fas fa-book-open text-xl"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-bold text-white group-hover:text-blue-400 transition">Crop Protection Against Birds Using Deep Learning and IoT</h3>
-                                <p class="text-xs text-gray-500 mt-2">IRJET, Vol. 10, Issue 4, Apr 2023</p>
-                            </div>
-                        </div>
-                    </a>
-                    
-                    <div class="glass-card p-6 rounded-xl" data-aos="fade-up" data-aos-delay="200">
-                        <h3 class="text-lg font-bold text-white mb-4 flex items-center">
-                            <i class="fas fa-certificate text-blue-400 mr-2"></i> Certifications
-                        </h3>
-                        <ul class="space-y-3">
-                            <li>
-                                <a href="https://www.coursera.org/account/accomplishments/verify/B2RUTWSD4VNE" target="_blank" class="flex items-center text-sm text-gray-300 hover:text-blue-400 transition bg-gray-800/50 p-3 rounded-lg border border-gray-700/50 hover:border-blue-500/50">
-                                    <i class="fas fa-external-link-alt text-xs mr-3 text-gray-500"></i> Machine Learning with Google Cloud
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.coursera.org/account/accomplishments/verify/FA3MXA6RJEAN" target="_blank" class="flex items-center text-sm text-gray-300 hover:text-blue-400 transition bg-gray-800/50 p-3 rounded-lg border border-gray-700/50 hover:border-blue-500/50">
-                                    <i class="fas fa-external-link-alt text-xs mr-3 text-gray-500"></i> Android Development
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-24 relative">
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center glass-card p-12 rounded-3xl" data-aos="zoom-in">
-            <h2 class="text-3xl font-bold text-white mb-4">Let's Connect</h2>
-            <p class="text-gray-400 mb-10 max-w-xl mx-auto">
-                I am always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
-            </p>
-            
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-10">
-                <a href="mailto:akash.p8869@gmail.com" class="flex items-center justify-center px-6 py-3 bg-gray-800/80 hover:bg-gray-700 rounded-lg transition border border-gray-600 w-full sm:w-auto font-mono text-sm">
-                    <i class="fas fa-envelope text-blue-500 mr-3"></i> akash.p8869@gmail.com
-                </a>
-                <a href="tel:+918356886969" class="flex items-center justify-center px-6 py-3 bg-gray-800/80 hover:bg-gray-700 rounded-lg transition border border-gray-600 w-full sm:w-auto font-mono text-sm">
-                    <i class="fas fa-phone text-blue-500 mr-3"></i> +91 83568 86969
-                </a>
-            </div>
-            
-            <div class="flex justify-center space-x-6">
-                <a href="https://github.com/Akash8356" target="_blank" class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:text-white hover:bg-blue-600 transition hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(37,99,235,0.6)]">
-                    <i class="fab fa-github text-xl"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/akash-prajapati-backend-ai/" target="_blank" class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:text-white hover:bg-[#0a66c2] transition hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(10,102,194,0.6)]">
-                    <i class="fab fa-linkedin text-xl"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-[#050810] py-6 text-center text-gray-600 text-xs font-mono border-t border-white/5 relative z-10">
-        <p>&copy; 2024 Akash Prajapati. Designed & Built with <i class="fas fa-heart text-red-500/70 mx-1"></i></p>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        // Initialize AOS (Scroll Animations)
-        AOS.init({
-            once: true,
-            offset: 50,
-            duration: 800,
-            easing: 'ease-out-cubic',
-        });
-
-        // Initialize Typed.js (Typing Effect)
-        var typed = new Typed('#typed-text', {
-            strings: ['AI Backend Engineer', 'Python Developer', 'AI Agent Designer', 'Problem Solver'],
-            typeSpeed: 50,
-            backSpeed: 30,
-            backDelay: 2000,
-            loop: true
-        });
-
-        // Particle Network Background Logic
-        const canvas = document.getElementById('particle-canvas');
-        const ctx = canvas.getContext('2d');
-        let particles = [];
-        let mouse = { x: null, y: null, radius: 150 };
-
-        window.addEventListener('mousemove', (event) => {
-            mouse.x = event.x;
-            mouse.y = event.y;
-        });
-
-        window.addEventListener('resize', () => {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-            initParticles();
-        });
-
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-
-        class Particle {
-            constructor() {
-                this.x = Math.random() * canvas.width;
-                this.y = Math.random() * canvas.height;
-                this.size = Math.random() * 2 + 1;
-                this.speedX = Math.random() * 1 - 0.5;
-                this.speedY = Math.random() * 1 - 0.5;
-            }
-            update() {
-                this.x += this.speedX;
-                this.y += this.speedY;
-
-                // Bounce off edges
-                if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
-                if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
-
-                // Mouse interaction
-                let dx = mouse.x - this.x;
-                let dy = mouse.y - this.y;
-                let distance = Math.sqrt(dx * dx + dy * dy);
-                if (distance < mouse.radius) {
-                    if (mouse.x < this.x && this.x < canvas.width - this.size * 10) this.x += 2;
-                    if (mouse.x > this.x && this.x > this.size * 10) this.x -= 2;
-                    if (mouse.y < this.y && this.y < canvas.height - this.size * 10) this.y += 2;
-                    if (mouse.y > this.y && this.y > this.size * 10) this.y -= 2;
-                }
-            }
-            draw() {
-                ctx.fillStyle = 'rgba(59, 130, 246, 0.5)'; // Blue particles
-                ctx.beginPath();
-                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-                ctx.fill();
-            }
-        }
-
-        function initParticles() {
-            particles = [];
-            let particleCount = (canvas.width * canvas.height) / 9000; // Responsive amount
-            for (let i = 0; i < particleCount; i++) {
-                particles.push(new Particle());
-            }
-        }
-
-        function connectParticles() {
-            for (let a = 0; a < particles.length; a++) {
-                for (let b = a; b < particles.length; b++) {
-                    let dx = particles[a].x - particles[b].x;
-                    let dy = particles[a].y - particles[b].y;
-                    let distance = Math.sqrt(dx * dx + dy * dy);
-
-                    if (distance < 120) {
-                        let opacityValue = 1 - (distance / 120);
-                        ctx.strokeStyle = `rgba(59, 130, 246, ${opacityValue * 0.3})`;
-                        ctx.lineWidth = 1;
-                        ctx.beginPath();
-                        ctx.moveTo(particles[a].x, particles[a].y);
-                        ctx.lineTo(particles[b].x, particles[b].y);
-                        ctx.stroke();
-                    }
-                }
-            }
-        }
-
-        function animate() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            for (let i = 0; i < particles.length; i++) {
-                particles[i].update();
-                particles[i].draw();
-            }
-            connectParticles();
-            requestAnimationFrame(animate);
-        }
-
-        initParticles();
-        animate();
-    </script>
-</body>
-</html>
+<section id="contact"><div class="wrap"><div class="eyebrow">Contact</div><h2>Let's talk</h2><p class="lead">Open to backend and AI backend roles, and to collaboration.</p>
+<div class="cols"><div class="card"><h3>Akash Prajapati</h3><ul><li><a href="mailto:akash.p8869@gmail.com">akash.p8869@gmail.com</a></li><li><a href="https://www.linkedin.com/in/akash-prajapati-backend-ai/" rel="noopener">LinkedIn</a></li><li><a href="https://github.com/Akash8356" rel="noopener">GitHub</a></li><li><a href="tel:+918356886969">+91 83568 86969</a></li></ul></div>
+<form id="contact-form" novalidate><input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+<div><label for="name">Full name</label><input id="name" name="name" autocomplete="name" required><span class="err" id="e-name"></span></div>
+<div><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" required><span class="err" id="e-email"></span></div>
+<div><label for="subject">Subject</label><input id="subject" name="subject" required><span class="err" id="e-subject"></span></div>
+<div><label for="message">Message</label><textarea id="message" name="message" rows="5" required></textarea><span class="err" id="e-message"></span></div>
+<div><label for="captcha">Type the number shown</label><div class="capbox"><canvas id="cap-canvas" width="150" height="46" role="img" aria-label="Captcha image showing a random 5-digit number. If you cannot read it, please email me directly."></canvas><button type="button" class="icon-btn" id="cap-new" aria-label="Show a new number">↻</button></div><input id="captcha" name="captcha" inputmode="numeric" autocomplete="off" maxlength="5" required><span class="err" id="e-captcha"></span></div>
+<button class="btn primary" type="submit">Send message</button><div id="status" role="status" aria-live="polite"></div></form></div></div></section>
+</main>
+<footer><div class="wrap">© <span id="year"></span> Akash Prajapati · Mumbai, India</div></footer>
+<button class="icon-btn" id="top" aria-label="Back to top">↑</button>
+<script src="assets/js/config.js"></script><script src="assets/js/main.js"></script><script src="assets/js/contact.js"></script>
+</body></html>
