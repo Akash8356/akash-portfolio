@@ -6,16 +6,34 @@ window.SITE = {
   email: "akash.p8869@gmail.com",
   roles: ["Python Backend Engineer", "Applied AI Engineer", "GenAI Engineer", "AI Systems Developer"],
   resumes: [
-    { title: "Master Resume", desc: "Python backend plus applied AI/LLM work in one document. Best general-purpose version.", file: "assets/documents/Akash_Prajapati_Master_Resume.pdf" },
-    { title: "Python Backend Engineer Resume", desc: "Django, DRF, FastAPI, microservices, Kafka, Redis and integrations. AI is listed as additional knowledge.", file: "assets/documents/Akash_Prajapati_Backend_Resume.pdf" },
-    { title: "Applied AI / GenAI Resume", desc: "RAG, LangGraph, semantic retrieval, LLM evaluation and safety controls on a backend foundation.", file: "assets/documents/Akash_Prajapati_GenAI_Resume.pdf" }
+    {
+      title: "Applied AI Engineer",
+      desc: "Practical AI engineering with Python backend experience, RAG pipelines, LLM integrations, semantic search, embeddings and AI-powered applications.",
+      file: "assets/documents/Akash_Prajapati_Applied_AI_Engineer_Resume_13_Nov_2026.pdf"
+    },
+    {
+      title: "Python Backend Engineer",
+      desc: "Backend engineering with Python, Django, DRF, FastAPI, REST APIs, microservices, PostgreSQL, Kafka, Redis, Celery and third-party integrations.",
+      file: "assets/documents/Akash_Prajapati_Python_Backend_Engineer_Resume_13_Nov_2026.pdf"
+    },
+    {
+      title: "GenAI Engineer",
+      desc: "Generative AI development focused on RAG architecture, LLMs, LangChain, LangGraph, semantic retrieval, embeddings, vector databases, AI agents and LLM evaluation.",
+      file: "assets/documents/Akash_Prajapati_GenAI_Engineer_Resume_13_Nov_2026.pdf"
+    },
+    {
+      title: "Full-Stack Developer",
+      desc: "Full-stack development combining Python, Django, REST APIs, React Native, React.js, Redux, reusable UI components, mobile integrations and payment workflows.",
+      file: "assets/documents/Akash_Prajapati_Full_Stack_Developer_Resume_13_Nov_2026.pdf"
+    }
   ],
   skills: {
     "Programming & Backend": ["Python","SQL","Django","Django REST Framework","FastAPI","REST APIs","Microservices"],
-    "Applied AI & GenAI": ["LLMs","RAG","Prompt Engineering","OpenAI APIs","LangChain","LangGraph","LangSmith","Semantic Retrieval","Sentence Transformers","Text Embeddings","Image Embeddings","ChromaDB","Whisper","ElevenLabs","Guardrails","LLM Evaluation","Response Validation"],
+    "Applied AI & GenAI": ["LLMs","RAG","Prompt Engineering","OpenAI APIs","LangChain","LangGraph","LangSmith","Semantic Retrieval","Sentence Transformers","Text Embeddings","Image Embeddings","ChromaDB","Whisper","ElevenLabs","Guardrails","Tool Calling","LLM Harnessing","LLM Evaluation","Response Validation"],
     "Databases & Messaging": ["PostgreSQL","Redis","Django ORM","Celery","Apache Kafka"],
     "Auth & Integrations": ["Keycloak","JWT","OAuth 2.0","OTP Verification","RBAC","Payment Gateway Integration","Third-Party APIs"],
     "Cloud & DevOps": ["AWS S3","AWS RDS","AWS EC2","AWS ELB","Docker","Kubernetes (fundamentals)","Grafana"],
+    "Frontend & Mobile": ["React Native","React.js","Redux","Redux Toolkit","JavaScript","HTML5","CSS3","Axios"],
     "Tools & Concepts": ["Git","GitHub","Swagger/OpenAPI","OOP","Database Design","Query Optimization","System Design","Agile"]
   },
   projects: [
